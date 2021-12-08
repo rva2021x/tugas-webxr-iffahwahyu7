@@ -1,0 +1,92 @@
+body {
+  margin: 0px;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  background-color: rgb(219, 226, 226);
+}
+
+h1 {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  font-size: 1.5rem;
+  color: black;
+}
+
+h2 {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  font-size: 1.2rem;
+  color: rgb(170, 0, 0);
+}
+
+#scene-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+border: none;
+color: white;
+padding: 4px 8px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+transition-duration: 0.4s;
+cursor: pointer;
+width: 100px;
+}
+
+.button1 {
+background-color: #d32424;
+color: white;
+border: 2px solid #d32424;
+}
+
+.button1:hover {
+background-color: #fac5c5; 
+color: black; 
+border: 2px solid #d32424;
+}
+
+.button2 {
+background-color: #d8ca0d;
+color: white;
+border: 2px solid #d8ca0d;
+}
+
+.button2:hover {
+background-color: #f8f191; 
+color: black; 
+border: 2px solid #d8ca0d;
+}
+
+.button3 {
+background-color: #4CAF50;
+color: white;
+border: 2px solid #4CAF50;
+}
+
+.button3:hover {
+background-color: #a9fcac; 
+color: black; 
+border: 2px solid #4CAF50;
+}
+
+.button4 {
+background-color: #008CBA;
+color: white;
+border: 2px solid #008CBA;
+}
+
+.button4:hover {
+background-color: #abe4f8; 
+color: black; 
+border: 2px solid #008CBA;
+}
+  
