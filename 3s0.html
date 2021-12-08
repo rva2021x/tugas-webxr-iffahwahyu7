@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main1.css" rel="stylesheet" type="text/css">
+    <title>3</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
+
+
+</head>
+<body>
+    <h1 class="title">3</h1>
+    <h2 style="text-align: left; padding: 10px;">Skor : 0</h2>
+    <h2><br><br>Layangkan kursor ke box merah.</h2>
+    <h1><br><br><br>Lebih banyak mana arah putaran box? Kanan atau kiri?</h1>
+    <h2><br><br><br><br><br>Pilih jawaban dengan meng-klik segitiga hijau</h2>
+    <a-scene>
+        <a-camera id="cam">
+            <a-cursor></a-cursor>
+        </a-camera>
+
+        <a-entity
+            geometry="primitive: triangle;"
+            text__5btn="
+                align: center;
+                baseline: top;
+                value: kiri;
+                wrapCount: 9;
+            "
+            material="color: green;"
+            position="-3 3 -4"
+            link="href: 4s1.html"
+            look-at="#cam"
+        ></a-entity>
+        <a-entity
+            geometry="primitive: triangle;"
+            text__7btn="
+                align: center;
+                baseline: top;
+                value: kanan;
+                wrapCount: 9;
+            "
+            material="color: green;"
+            position="3 3 -4"
+            link="href: 4s0.html"
+            look-at="#cam"
+        ></a-entity>
+
+        <a-box
+            position="-3 1 -4"
+            color="red"
+            animation__scale="
+                property: rotation;
+                from:0 0 0;
+                to:0 360 0;
+                loop: true;
+                startEvents: click;
+                pauseEvents: mouseleave;
+                resumeEvents: mouseenter;
+            "
+        ></a-box>
+        <a-box
+            position="0 -1 -4"
+            color="red"
+            animation__scale="
+                property: rotation;
+                from:0 0 0;
+                to:0 360 0;
+                loop: true;
+                startEvents: click;
+                pauseEvents: mouseleave;
+                resumeEvents: mouseenter;
+            "
+        ></a-box>
+        <a-box
+            position="3 0 -4"
+            color="red"
+            animation__scale="
+                property: rotation;
+                from:0 0 0;
+                to:0 360 0;
+                loop: true;
+                startEvents: click;
+                pauseEvents: mouseleave;
+                resumeEvents: mouseenter;
+            "
+        ></a-box>
+        <a-box
+            position="6 1 -2"
+            color="red"
+            animation__scale="
+                property: rotation;
+                from:0 0 0;
+                to:0 -360 0;
+                loop: true;
+                startEvents: click;
+                pauseEvents: mouseleave;
+                resumeEvents: mouseenter;
+            "
+        ></a-box>
+        <a-box
+            position="6 -3 2"
+            color="red"
+            animation__scale="
+                property: rotation;
+                from:0 0 0;
+                to:0 -360 0;
+                loop: true;
+                startEvents: click;
+                pauseEvents: mouseleave;
+                resumeEvents: mouseenter;
+            "
+        ></a-box>
+        <a-box
+            position="3 2 4"
+            color="red"
+            animation__scale="
+                property: rotation;
+                from:0 0 0;
+                to:0 -360 0;
+                loop: true;
+                startEvents: click;
+                pauseEvents: mouseleave;
+                resumeEvents: mouseenter;
+            "
+        ></a-box>
+        <a-box
+            position="0 3 4"
+            color="red"
+            animation__scale="
+                property: rotation;
+                from:0 0 0;
+                to:0 360 0;
+                loop: true;
+                startEvents: click;
+                pauseEvents: mouseleave;
+                resumeEvents: mouseenter;
+            "
+        ></a-box>
+        <a-box
+            position="-3 -1 4"
+            color="red"
+            animation__scale="
+                property: rotation;
+                from:0 0 0;
+                to:0 -360 0;
+                loop: true;
+                startEvents: click;
+                pauseEvents: mouseleave;
+                resumeEvents: mouseenter;
+            "
+        ></a-box>
+        <a-box
+            position="-6 -3 -2"
+            color="red"
+            animation__scale="
+                property: rotation;
+                from:0 0 0;
+                to:0 -360 0;
+                loop: true;
+                startEvents: click;
+                pauseEvents: mouseleave;
+                resumeEvents: mouseenter;
+            "
+        ></a-box>
+        <a-box
+            position="-6 0 2"
+            color="red"
+            animation__scale="
+                property: rotation;
+                from:0 0 0;
+                to:0 -360 0;
+                loop: true;
+                startEvents: click;
+                pauseEvents: mouseleave;
+                resumeEvents: mouseenter;
+            "
+        ></a-box>
+    </a-scene>
+</body>
+</html>
