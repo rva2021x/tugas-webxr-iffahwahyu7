@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main1.css" rel="stylesheet" type="text/css">
+    <title>1</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
+
+
+</head>
+<body>
+    <h1 class="title">1</h1>
+    <h2 style="text-align: left; padding: 10px;">Skor : 0</h2>
+    <h1><br><br>Ada berapa banyak bangun di simi?</h1>
+    <h2><br><br><br>><br>Pilih jawaban dengan meng-klik segitiga hijau</h2>
+    <a-scene>
+        <a-camera id="cam">
+            <a-cursor></a-cursor>
+        </a-camera>
+
+        <a-entity
+            geometry="primitive: triangle;"
+            text__5btn="
+                align: center;
+                baseline: top;
+                value: 9;
+                wrapCount: 5;
+            "
+            material="color: green;"
+            position="-4 3 -7"
+            link="href: 2s0.html"
+            look-at="#cam"
+        ></a-entity>
+        <a-entity
+            geometry="primitive: triangle;"
+            text__7btn="
+                align: center;
+                baseline: top;
+                value: 11;
+                wrapCount: 5;
+            "
+            material="color: green;"
+            position="0 3 -7"
+            link="href: 2s1.html"
+            look-at="#cam"
+        ></a-entity>
+
+        <a-sphere
+            color="pink"
+            radius="0.5"
+            position="7 0 -1"
+        ></a-sphere>
+        <a-sphere
+            color="yellow"
+            radius="0.5"
+            position="1 1.5 -3"
+        ></a-sphere>
+        <a-sphere
+            color="blue"
+            radius="0.5"
+            position="-6 1.5 0"
+        ></a-sphere>
+        <a-box
+            color="green"
+            position="-2 1.5 -6"
+            rotation="0 45 0"
+            scale="1 1 1"
+        ></a-box>
+        <a-box
+            color="white"
+            position="-1 -1 -3"
+            scale="2 1 2"
+        ></a-box>
+        <a-box
+            color="red"
+            position="2 1.5 -3"
+            scale="1 2 1"
+        ></a-box>
+        <a-cone color="tomato" radius-bottom="2" radius-top="0.5" position="3 1.5 3"></a-cone>
+        <!-- Basic cylinder. -->
+        <a-cylinder color="crimson" height="3" radius="1.5" position="-2 1 3"></a-cylinder>
+
+        <!-- Hexagon. -->
+        <a-cylinder color="cyan" segments-radial="6" position="2 -1.5 4"></a-cylinder>
+
+        <!-- Pac-man. -->
+        <a-cylinder color="yellow" theta-start="50" theta-length="280" side="double" position="4 0 1"></a-cylinder>
+
+        <a-ring color="teal" radius-inner="1" radius-outer="2" position="-2 -1.5 2"></a-ring> 
+    </a-scene>
+</body>
+</html>
